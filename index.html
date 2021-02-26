@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUG.RU test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="container">
+                <div class="main__info">
+                    <!-- begin .logo -->
+                    <div class="logo main__logo">
+                        <img class="logo__pic" src="./static/img/logo.svg" alt="JUG logo" width="126" height="41">
+                    </div>
+                    <!-- end .logo -->
+
+                    <!-- begin .about -->
+                    <div class="about main__about">
+                        <h1 class="title about__title">Конференции, которые нужны</h1>
+                        <p class="about__text">Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и
+                            сочувствующих.</p>
+                        <p class="about__text">С нас — крутая программа, топовые спикеры, технические доклады без воды.
+                        </p>
+                        <p class="about__text">С вас — готовность смотреть и общаться.</p>
+                    </div>
+                    <!-- end .about -->
+
+                    <!-- begin .btn-group -->
+                    <div class="btn-group">
+                        <button class="btn btn--success btn--round-xs btn--size-sm btn--emoji-ok js-modal">Купить
+                            билет</button>
+                        <button class="btn btn--rejection btn--round-xs btn--size-sm btn--emoji-fail">Я пас</button>
+                    </div>
+                    <!-- end .btn-group -->
+                </div>
+            </div>
+            <div class="main__bg">
+                <svg class="animate-line" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="765px" height="620px" viewBox="0 0 765 620"
+                    xml:space="preserve">
+                    <line stroke="#000000" x1="-210" y1="660" x2="1600" y2="660" />
+
+                </svg>
+            </div>
+        </main>
+        <!-- begin modal -->
+        <div class="modal">
+            <div class="modal__wrap container">
+                <div class="modal__blocks">
+                    <div class="subscribe">
+                        <h2 class="subscribe__title subtitle subtitle--subscribe">Я хочу знать, когда будет офлайн</h2>
+
+                        <div class="subscribe__block">
+                            <form class="subscribe__form" action="/" method="POST">
+                                <div class="subscribe__form-group">
+                                    <input class="subscribe__input" type="text" placeholder="Укажите email">
+                                    <input class="subscribe__submit btn" type="submit" value="Подписаться">
+                                </div>
+                            </form>
+
+                            <p class="subscribe__personal">Нажимая на кнопку вы соглашаетесь на обработку <a
+                                    href="#">персональных
+                                    данных</a></p>
+                        </div>
+                        <p class="subscribe__success">Спасибо, что подписались на нашу рассылку!</p>
+                    </div>
+                    <div class="reject">
+                        <h2 class="reject__title subtitle subtitle--reject">Пожалуй откажусь!</h2>
+                        <form class="reject__form" action="/" method="POST">
+                            <div class="reject__form-group">
+                                <label class="reject__label" for="first">Вы свои цены видели?</label>
+                                <input class="visibility-hidden" name="reject" id="first" type="radio"
+                                    value="Вы свои цены видели?">
+                            </div>
+
+                            <div class="reject__form-group">
+                                <label class="reject__label" for="second">Доклады ни о чем</label>
+                                <input class="visibility-hidden" name="reject" id="second" type="radio"
+                                    value="Доклады ни о чем">
+                            </div>
+
+                            <div class="reject__form-group">
+                                <label class="reject__label" for="third">У вас там всё хорошо?</label>
+                                <input class="visibility-hidden" name="reject" id="third" type="radio"
+                                    value="У вас там всё хорошо?">
+                            </div>
+
+                            <div class="reject__form-group">
+                                <label class="reject__label" for="fourth">Денег нет, но вы держитесь</label>
+                                <input class="visibility-hidden" name="reject" id="fourth" type="radio"
+                                    value="Денег нет, но вы держитесь">
+                            </div>
+                        </form>
+                        <div class="reject__thanks">
+                            <p class="reject__thanks-text">Спасибо, что поделились!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="back js-modal-close" href="#">Я кликнул просто посмотреть</a>
+            </div>
+        </div>
+        <!-- end modal -->
+    </div>
+    <script src="./static/js/main.js"></script>
+</body>
+
+</html>
